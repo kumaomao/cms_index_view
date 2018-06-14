@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/pages/index/index'
-Vue.use(Router)
+import Article from '@/pages/article/article'
+Vue.use(Router);
 
 export default new Router({
     mode:'history',
@@ -11,6 +12,13 @@ export default new Router({
       name: 'index',
       component: Index,
       name:'首页'
-    }
+    },
+      {
+          path: '/article',
+          name: 'article',
+          component: Article,
+          name:'文章'
+      },
+
   ]
 })

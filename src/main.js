@@ -4,10 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueWechatTitle from 'vue-wechat-title'
-
+import axios from './axios/utils'
 
 Vue.use(VueWechatTitle);
 Vue.config.productionTip = false;
+
+Vue.prototype.$ajax=axios;
 
 /* eslint-disable no-new */
 new Vue({

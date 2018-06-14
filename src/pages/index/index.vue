@@ -20,6 +20,7 @@
                         <CMS></CMS>
                     </div>
                 </div>
+                <Sidebar></Sidebar>
             </section>
         </div>
     </div>
@@ -33,6 +34,7 @@ import ExcerptList from './children/excerptList';
 import Advertising from './children/advertising';
 import List from './children/List';
 import CMS from './children/cms';
+import Sidebar from '../../components/sidebar';
 export default {
     data(){
         return{
@@ -47,6 +49,7 @@ export default {
         Advertising,
         CMS,
         List,
+        Sidebar,
     }
 }
 
